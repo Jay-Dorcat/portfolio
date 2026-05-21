@@ -8,6 +8,10 @@
         <link rel="icon" href="Icon.png">
     </head>
     <body class="rootBody" style="display:flex; flex-direction: column;">
+        <video class="BGVideo" autoplay loop muted>
+            <source src="Assets/PortfolioBG.mp4" type="video/mp4">
+        </video>
+        
         <!--Header-->
         <div class="panel" style="padding-bottom: 0">
             <div style="height: 120px; display: flex">
@@ -23,11 +27,15 @@
             </div>
             <div id="navSelect"></div>
         </div>
+        
+       
+        
         <!--Page Contents-->
         <!--<object id=pageContent type="text/html" data="Home.html" style="flex: 1 0 100%"></object>-->
         <iframe id=pageContent title="Subpage" src="Home.html" style="border: 0; flex: 1 0 100%"></iframe>
         <!--<embed id=pageContent src="Home.html" title="Home" type="text/html" style="width: 100%; flex: 1 0 100%; overflow: hidden">-->
         <!--Footer-->
+        
         <div class="panel" style="display: flex">
             <span style="flex: 1 0 40%">Website created by me!</span>
             <a class="footerLink" href="mailto:jaysharp.lee@gmail.com"><b>Email</b></a>
