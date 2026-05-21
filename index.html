@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Jay (Dorcat)</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="main.js"></script>
+        <link rel="icon" href="Icon.png">
+    </head>
+    <body class="rootBody" style="display:flex; flex-direction: column;">
+        <!--Header-->
+        <div class="panel" style="padding-bottom: 0">
+            <div style="height: 120px; display: flex">
+                <div style="align-content: center"><h1>Jay Sharp</h1><div style="margin-left: 30px"><i>aka 'Dorcat'</i></div></div>
+                <h3 style="align-self: center"><i>Game Developer</i></h3>
+            </div>
+            
+            <div style="display: table; margin: auto; margin-bottom: 0">
+                <span><button id=nav1 onclick="navSelect('nav1')" class="navbutton"><b>Home</b></button></span>
+                <span><button id=nav2 onclick="navSelect('nav2')" class="navbutton"><b>Games</b></button></span>
+                <!--<span><button id=nav3 onclick="navSelect('nav3')" class="navbutton"><b>Tools</b></button></span>-->
+                <span><button id=nav4 onclick="navSelect('nav4')" class="navbutton"><b>About</b></button></span>
+            </div>
+            <div id="navSelect"></div>
+        </div>
+        <!--Page Contents-->
+        <!--<object id=pageContent type="text/html" data="Home.html" style="flex: 1 0 100%"></object>-->
+        <iframe id=pageContent title="Subpage" src="Home.html" style="border: 0; flex: 1 0 100%"></iframe>
+        <!--<embed id=pageContent src="Home.html" title="Home" type="text/html" style="width: 100%; flex: 1 0 100%; overflow: hidden">-->
+        <!--Footer-->
+        <div class="panel" style="display: flex">
+            <span style="flex: 1 0 40%">Website created by me!</span>
+            <a class="footerLink" href="mailto:jaysharp.lee@gmail.com"><b>Email</b></a>
+            <a class="footerLink" href="https://github.com/Jay-Dorcat"><b>Github</b></a>
+            <a class="footerLink" href="https://dorcat.itch.io"><b>Itch.io</b></a>
+            <a class="footerLink" href="https://bsky.app/profile/dorcat.bsky.social"><b>Bluesky</b></a>
+            <a class="footerLink" href="https://x.com/DorcatDev"><b>Twitter/X</b></a>
+            <a class="footerLink" href="https://discord.gg/SjzTBDr7Fw"><b>Discord</b></a>
+        </div>
+    </body>
+</html>

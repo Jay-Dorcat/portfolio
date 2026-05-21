@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+:root {
+    /*font-family:'Open Sans';*/
+    font-family:'Quicksand';
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.rootBody {
+    /*background-image:  url('https://github.com/Jay-Dorcat/HTMLImages/blob/main/Portfolio/MilkyWayBG1k.png?raw=true');*/
+    background-image: url("https://img.itch.zone/aW1nLzI2NTE3NDU0LmdpZg==/original/%2FmbvG0.gif");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #c3d9ff;
+    background-blend-mode: multiply;
+    min-height: 100%;
+}
+
+button {
+    font-family:'Quicksand';
+    font-size: 14px;
+}
+
+p {
+    text-align: center;
+    text-shadow: 0 0 5px #000, 0 0 3px #000, 0 0 1px #000;
+}
+
+h1 {
+    margin: 30px 0 0 30px;
+    padding: 0;
+    font-size: 36px;
+    text-shadow: 0 0 10px #000, 0 0 8px #000, 0 0 6px #000;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 0 0 9px #000, 0 0 7px #000, 0 0 5px #000;
+}
+
+h3 {
+    margin-left: 30px;
+    padding: 0;
+    font-size: 20px;
+    text-shadow: 0 0 8px #000, 0 0 6px #000, 0 0 4px #000;
+}
+
+.panel {
+    padding: 10px;
+    outline-style: solid;
+    outline-color: #111119;
+    background-color: #16161d;
+}
+
+@keyframes navUnhighlight {
+    100% {background-color: transparent; color: white}
+    0% {background-color: #00000043; color: #7dfcff}
+}
+
+.navbutton {
+    padding: 5px 8px;
+    margin-bottom: 0;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    animation: navUnhighlight 0.5s;
+}
+
+@keyframes navHighlight {
+    0% {background-color: transparent; color: white}
+    100% {background-color: #00000043; color: #7dfcff}
+}
+
+.navbuttonSelected {
+    padding: 5px 8px;
+    margin-bottom: 0;
+    border: 0;
+    animation: navHighlight 0.5s;
+    background-color: #00000043;
+    color: #7dfcff;
+}
+
+#navSelect {
+    background-color: #7dfcff;
+    justify-content: left;
+    display: inline;
+    position: absolute;
+    padding-bottom: 2px;
+    padding-right: 2px;
+}
+
+table {
+    justify-self: center;
+}
+
+.footerLink, a{
+    flex: auto;
+    color: white;
+    text-decoration: none;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+img {
+    height: 300px;
+    display: inline;
+}
+
+.gameEmbed {
+    border: none;
+    display: block;
+    justify-self: center;
+}
