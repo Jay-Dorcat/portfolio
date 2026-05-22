@@ -132,3 +132,7 @@ img {
     display: block;
     justify-self: center;
 }
+
+table {
+    justify-self: center;
+}
