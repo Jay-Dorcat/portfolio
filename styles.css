@@ -9,8 +9,11 @@
 
 .BGVideo {
     position: fixed;
-    right: 0;
+    /*background-position: center, center;*/
+    /*right: 0;*/
+    top: 0;
     bottom: 0;
+    align-self: center;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
@@ -42,12 +45,13 @@ button {
 p {
     text-align: center;
     text-shadow: 0 0 5px #000, 0 0 3px #000, 0 0 1px #000;
+    font-size: 2vh;
 }
 
 h1 {
     margin: 30px 0 0 30px;
     padding: 0;
-    font-size: 36px;
+    font-size: 4vh;
     text-shadow: 0 0 10px #000, 0 0 8px #000, 0 0 6px #000;
     text-align: center;
 }
@@ -55,20 +59,21 @@ h1 {
 h2 {
     text-align: center;
     text-shadow: 0 0 9px #000, 0 0 7px #000, 0 0 5px #000;
+    font-size: 3vh;
 }
 
 h3 {
     margin-left: 30px;
     padding: 0;
-    font-size: 20px;
+    font-size: 2vh;
     text-shadow: 0 0 8px #000, 0 0 6px #000, 0 0 4px #000;
 }
 
 .panel {
     padding: 10px;
-    outline-style: solid;
-    outline-color: #111119;
-    background-color: #16161d;
+    /*outline-style: solid;*/
+    /*outline-color: rgba(0, 0, 0, 0.43);*/
+    background-color: rgba(58, 58, 58, 0.43);
 }
 
 @keyframes navUnhighlight {
@@ -83,6 +88,7 @@ h3 {
     background-color: transparent;
     border: 0;
     animation: navUnhighlight 0.5s;
+    font-size: 2vh;
 }
 
 @keyframes navHighlight {
@@ -97,6 +103,7 @@ h3 {
     animation: navHighlight 0.5s;
     background-color: #00000043;
     color: #7dfcff;
+    font-size: 2vh;
 }
 
 #navSelect {
@@ -135,4 +142,14 @@ img {
 
 table {
     justify-self: center;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
 }

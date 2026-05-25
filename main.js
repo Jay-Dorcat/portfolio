@@ -31,6 +31,7 @@ function process() {
             pageContent.style.opacity = lerp(pageContent.style.opacity, 0.0, 0.2);
         } else {
             pageContent.src = targetPage;
+            pageContent.style.opacity = 0.0;
         }
     } else if (pageContent.style.opacity < 1.0) {
         pageContent.style.opacity = lerp(pageContent.style.opacity, 1.0, 0.1);
